@@ -138,3 +138,33 @@
 }
 
 /*# sourceMappingURL=sourcemaps/tiny-slider.css.map */
+
+@media (max-width: 991.98px) {
+  .img-height-50 {
+    height: 30vh;
+  }
+}
+
+.tns-nav {
+  text-align: center;
+}
+.tns-prev,
+.tns-next {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 12px 20px;
+  color: #fff;
+  background: #5ca3c1;
+  border-radius: 5px;
+}
+.tns-nav > button {
+  position: relative;
+  bottom: 30px;
+  display: inline-block;
+  width: 5px;
+  height: 15px;
+  margin: 0 3px;
+  border-radius: 100%;
+  border: rgb(0, 0, 0) solid 1px;
+  background: rgba(0, 0, 0, 0.61);
+}
