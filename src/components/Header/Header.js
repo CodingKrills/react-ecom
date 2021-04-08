@@ -1,4 +1,5 @@
 import React from 'react'
+import './Header.css'
 
 import {
     Link
@@ -14,7 +15,8 @@ const Header = () => {
     }
 
     return (
-        <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light fixed-top shadow" aria-label="Main navigation">
+        <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-default fixed-top"
+            aria-label="Main navigation">
             <div className="container">
                 <a className="navbar-brand" href="/">Offcanvas navbar</a>
                 <button className="navbar-toggler mt-2 p-0 border-0 nav-icon0" type="button" onClick={openNav}>
@@ -53,6 +55,28 @@ const Header = () => {
                                 <li><a className="dropdown-item" href="/">Something else here</a></li>
                             </ul>
                         </li>
+                    </ul>
+                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <div className="widgets-wrap float-md-right">
+                            <div className="widget-header mr-3">
+                                <a href="/" className="icon icon-sm rounded-circle border mx-2"
+                                ><i className="fa fa-shopping-cart"></i
+                                ></a>
+                                <span className="badge badge-pill badge-danger notify">0</span>
+                            </div>
+                            <div className="widget-header icontext">
+                                <a href="/" className="icon icon-sm rounded-circle border"
+                                ><i className="fa fa-user"></i
+                                ></a>
+                                <div className="text">
+                                    <span className="text-muted">Welcome!</span>
+                                    <div>
+                                        <a href="/">Sign in</a> |
+                                        <a href="/"> Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </ul>
                 </div>
             </div>

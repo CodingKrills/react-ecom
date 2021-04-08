@@ -1,64 +1,47 @@
 import React from 'react'
-import TinySlider from "tiny-slider-react";
-
-import './Carosel.css'
+import Slider from "react-slick";
 
 const Carosel = () => {
 
     const data = [
         {
             id: 1,
-            img: "https://i.pinimg.com/originals/53/aa/f6/53aaf6011bba6d6bb0499e1eef12c26d.jpg"
+            img: "https://jooinn.com/images/stylish-model-1.jpg"
         },
         {
             id: 2,
-            img: "https://i.pinimg.com/originals/53/aa/f6/53aaf6011bba6d6bb0499e1eef12c26d.jpg"
+            img: "https://images6.alphacoders.com/361/361022.jpg"
         },
         {
             id: 3,
-            img: "https://i.pinimg.com/originals/53/aa/f6/53aaf6011bba6d6bb0499e1eef12c26d.jpg"
+            img: "https://img.freepik.com/free-photo/fashion-beauty-concept-profile-view-stylish-woman-black-evening-dress-makeup-earrings-looking-left-sensual-standing-white-background_1258-41292.jpg?size=626&ext=jpg&ga=GA1.2.855662366.1617148800"
         }
     ]
 
-    const settings = {
-        lazyload: true,
-        nav: true,
-        mouseDrag: true,
-        autoWidth: true,
-        navPosition: "bottom",
-        controls: false,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayButtonOutput: false,
-        gutter: 0,
-        responsive: {
-            640: {
-                items: 2
-            },
-            700: {
-                items: 2
-            },
-            900: {
-                items: 1
-            }
-        }
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
     };
 
 
     return (
         <>
-            <TinySlider settings={settings}>
+            <Slider {...settings}>
                 {data.map((el) => (
-                    <div key={el.id}>
+                    <div className="" key={el.id}>
                         <img
-                            className="img-fluid tns-lazy-img img-height-50"
+                            className="img-fluid"
+                            style={{ height: "25em", width: "100%" }}
                             src={el.img}
-                            data-src={el.img}
                             alt={el.img}
                         />
                     </div>
                 ))}
-            </TinySlider>
+            </Slider>
         </>
     )
 }

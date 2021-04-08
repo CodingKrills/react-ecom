@@ -9,7 +9,7 @@ import {
 import Home from "./screens/Home";
 import Register from "./screens/Register";
 
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 
 function App() {
 
