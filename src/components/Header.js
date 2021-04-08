@@ -1,5 +1,10 @@
 import React from 'react'
 
+import {
+    Link
+} from "react-router-dom";
+
+
 const Header = () => {
 
     const openNav = () => {
@@ -27,7 +32,7 @@ const Header = () => {
                             <a className="nav-link active" aria-current="page" href="/">Dashboard</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/">Notifications</a>
+                            <Link className="nav-link" to="/signup">Sign Up</Link>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/">Profile</a>
