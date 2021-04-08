@@ -1,6 +1,5 @@
 html,
 body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
 
 body {
@@ -196,4 +195,20 @@ body {
 .btn-primary:focus {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
+}
+
+/* .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+} */
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .nav-link {
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
 }

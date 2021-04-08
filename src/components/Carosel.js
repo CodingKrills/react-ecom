@@ -8,15 +8,15 @@ const Carosel = () => {
     const data = [
         {
             id: 1,
-            img: "https://dummyimage.com/1200x400/2f7842/fff"
+            img: "https://www.xwebtools.com/dummy-image/1200x400/ad68ad/FFF"
         },
         {
             id: 2,
-            img: "https://dummyimage.com/1200x400/2f7842/fff"
+            img: "https://www.xwebtools.com/dummy-image/1200x400/ad68ad/FFF"
         },
         {
             id: 3,
-            img: "https://dummyimage.com/1200x400/2f7842/fff"
+            img: "https://www.xwebtools.com/dummy-image/1200x400/ad68ad/FFF"
         }
     ]
 
