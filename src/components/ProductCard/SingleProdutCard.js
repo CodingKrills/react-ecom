@@ -7,7 +7,7 @@ const SingleProdutCard = () => {
     const [nav2, setNav2] = useState(null);
 
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -52,6 +52,7 @@ const SingleProdutCard = () => {
                             slidesToShow={4}
                             swipeToSlide={true}
                             focusOnSelect={true}
+                            arrows={false}
                         >
                             <div>
                                 <img className="img-fluid" style={{ width: "100%", padding: "0.2rem" }} src="https://dummyimage.com/900x400/000/fff" alt="img" />
@@ -78,6 +79,54 @@ const SingleProdutCard = () => {
                 </div>
                 <div className="col-12 col-md-5">
                     <h1>Col 2</h1>
+                    <div className="card my-card my-shadow mb-2">
+                        <div className="card-body">
+                            This is some text within a card body.
+                        </div>
+                    </div>
+                    <div className="card my-card my-shadow mb-2">
+                        <div className="card-body">
+                            This is some text within a card body.
+                        </div>
+                    </div>
+                    <div className="card my-card my-shadow mb-2">
+                        <div className="card-body">
+                            This is some text within a card body.
+                            This is some text within a card body.
+
+                            This is some text within a card body.
+                            This is some text within a card body.
+                            This is some text within a card body.
+                            This is some text within a card body.
+
+                        </div>
+                    </div>
+                    <div className="card my-card my-shadow mb-2">
+                        <div className="card-body">
+                            This is some text within a card body.
+                            This is some text within a card body.
+
+                            This is some text within a card body.
+                            This is some text within a card body.
+                            This is some text within a card body.
+                            This is some text within a card body.
+                            This is some text within a card body.
+                            This is some text within a card body.
+
+                            This is some text within a card body.
+                            This is some text within a card body.
+                            This is some text within a card body.
+                            This is some text within a card body.
+                            This is some text within a card body.
+                            This is some text within a card body.
+
+                            This is some text within a card body.
+                            This is some text within a card body.
+                            This is some text within a card body.
+                            This is some text within a card body.
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
