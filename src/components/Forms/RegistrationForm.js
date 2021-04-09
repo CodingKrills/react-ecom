@@ -11,6 +11,7 @@ const RegistrationForm = () => {
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <div class="form-floating mb-3">
+                                            {/* <i class="fas fa-user"></i> */}
                                             <input type="text" class="form-control" id="floatingInput" placeholder="first name" />
                                             <label className="form-label" for="floatingInput">First Name</label>
                                         </div>
@@ -26,9 +27,21 @@ const RegistrationForm = () => {
                                     <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
                                     <label className="form-label" for="floatingInput">Email address</label>
                                 </div>
-                                <div class="form-floating">
+                                <div class="form-floating mb-3">
                                     <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
                                     <label className="form-label" for="floatingPassword">Password</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Re Enter Password" />
+                                    <label className="form-label" for="floatingPassword">Re Enter Password</label>
+                                </div>
+                                <div class="checkbox mb-3">
+                                    <label className="form-label">
+                                        <input type="checkbox" value="remember-me" /> Remember Me
+                                    </label>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-lg" style={{ background: "#2c3e50", color: "#fff" }} type="button">Button</button>
                                 </div>
                             </form>
                         </div>

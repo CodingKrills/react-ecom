@@ -218,7 +218,22 @@ nav {
 
 /*  */
 .form-label {
-  font-size: 1rem;
+  font-size: 0.9rem;
+}
+.form-control {
+  border-radius: 0.2rem;
+  border: #7d7d7d solid 1px;
+}
+
+.form-control:focus {
+  border-radius: 0.2rem;
+  border: #7d7d7d solid 2px;
+}
+
+.form-floating > .form-control,
+.form-floating > .form-select {
+  height: calc(3.1rem + 2px);
+  padding: 1rem 0.75rem;
 }
 
 /*  */
