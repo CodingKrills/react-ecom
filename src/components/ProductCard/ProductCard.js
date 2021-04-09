@@ -1,6 +1,10 @@
 import React from 'react'
 import Slider from "react-slick";
 
+import {
+    Link
+} from "react-router-dom";
+
 import './ProductCard.css'
 
 const ProductCard = () => {
@@ -75,8 +79,6 @@ const ProductCard = () => {
         ]
     };
 
-
-
     return (
 
         <div className="container-fluid">
@@ -102,12 +104,12 @@ const ProductCard = () => {
                                         ></a>
                                     </li>
                                     <li>
-                                        <a href="/" data-tip="Add to Cart"
+                                        <Link href="/" data-tip="Add to Cart"
                                         ><i className="fa fa-shopping-cart"></i
-                                        ></a>
+                                        ></Link>
                                     </li>
                                 </ul>
-                                <a className="add-to-cart" href="/">Add to cart</a>
+                                <Link className="add-to-cart" to="/product">Add to cart</Link>
                                 <div className="product-content">
                                     <h3 className="title"><a href="/">Women's Designer Top</a></h3>
                                     <span className="price">$599.99</span>

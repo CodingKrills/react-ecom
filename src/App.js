@@ -8,6 +8,7 @@ import {
 
 import Home from "./screens/Home";
 import Register from "./screens/Register";
+import SingleProduct from "./screens/SingleProduct";
 
 import Header from "./components/Header/Header";
 
@@ -23,6 +24,7 @@ function App() {
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/signup" component={Register} exact />
+            <Route path="/product" component={SingleProduct} exact />
           </Switch>
         </div>
       </Router>

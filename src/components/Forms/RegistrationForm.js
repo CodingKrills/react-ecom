@@ -6,42 +6,43 @@ const RegistrationForm = () => {
             <div style={{ marginTop: "5%" }}>
                 <div className="row justify-content-md-center">
                     <div className="col-12 col-md-8">
-                        <div className="card p-4 shadow">
+                        <div className="card p-4 my-shadow my-card">
                             <form>
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <div class="form-floating mb-3">
-                                            {/* <i class="fas fa-user"></i> */}
-                                            <input type="text" class="form-control" id="floatingInput" placeholder="first name" />
-                                            <label className="form-label" for="floatingInput">First Name</label>
+                                <h2 className="text-center mb-4">Register</h2>
+                                <div className="row">
+                                    <div className="col-12 col-md-6">
+                                        <div className="form-floating mb-3">
+                                            {/* <i className="fas fa-user"></i> */}
+                                            <input type="text" className="form-control" id="floatingInput1" placeholder="first name" />
+                                            <label className="form-label">First Name</label>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingInput" placeholder="last name" />
-                                            <label className="form-label" for="floatingInput">Last Name</label>
+                                    <div className="col-12 col-md-6">
+                                        <div className="form-floating mb-3">
+                                            <input type="text" className="form-control" id="floatingInpu2" placeholder="last name" />
+                                            <label className="form-label">Last Name</label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
-                                    <label className="form-label" for="floatingInput">Email address</label>
+                                <div className="form-floating mb-3">
+                                    <input type="email" className="form-control" id="floatingInpu3" placeholder="name@example.com" />
+                                    <label className="form-label">Email address</label>
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
-                                    <label className="form-label" for="floatingPassword">Password</label>
+                                <div className="form-floating mb-3">
+                                    <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
+                                    <label className="form-label">Password</label>
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Re Enter Password" />
-                                    <label className="form-label" for="floatingPassword">Re Enter Password</label>
+                                <div className="form-floating mb-3">
+                                    <input type="password" className="form-control" id="floatingRepeatPassword" placeholder="Re Enter Password" />
+                                    <label className="form-label">Re Enter Password</label>
                                 </div>
-                                <div class="checkbox mb-3">
+                                <div className="checkbox mb-3">
                                     <label className="form-label">
                                         <input type="checkbox" value="remember-me" /> Remember Me
                                     </label>
                                 </div>
-                                <div class="d-grid gap-2">
-                                    <button class="btn btn-lg" style={{ background: "#2c3e50", color: "#fff" }} type="button">Button</button>
+                                <div className="d-grid gap-2">
+                                    <button className="btn btn-lg" style={{ background: "#2c3e50", color: "#fff" }} type="button">Button</button>
                                 </div>
                             </form>
                         </div>

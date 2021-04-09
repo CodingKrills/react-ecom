@@ -32,10 +32,9 @@ const Carosel = () => {
         <>
             <Slider {...settings}>
                 {data.map((el) => (
-                    <div className="" key={el.id}>
+                    <div key={el.id}>
                         <img
-                            className="img-fluid"
-                            style={{ height: "25em", width: "100%" }}
+                            className="img-fluid hero-carosel"
                             src={el.img}
                             alt={el.img}
                         />
