@@ -15,10 +15,10 @@ const Header = () => {
     }
 
     return (
-        <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-default fixed-top my-shadow"
+        <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-default shadow-sm"
             aria-label="Main navigation">
             <div className="container">
-                <Link className="navbar-brand" to="/">Offcanvas navbar</Link>
+                <Link className="navbar-brand" to="/">Offcanvas</Link>
                 <button className="navbar-toggler mt-2 p-0 border-0 nav-icon0" type="button" onClick={openNav}>
                     <span></span>
                     <span></span>
@@ -35,12 +35,6 @@ const Header = () => {
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/signup">Sign Up</Link>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Profile</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Switch account</a>
                         </li>
                         <li className="nav-item dropdown" >
                             <a className="nav-link dropdown-toggle"
